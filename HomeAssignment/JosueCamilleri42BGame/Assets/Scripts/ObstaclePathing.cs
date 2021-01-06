@@ -6,7 +6,6 @@ public class ObstaclePathing : MonoBehaviour
 {
 
     [SerializeField] List<Transform> waypoints;
-    [SerializeField] float obstacleMoveSpeed = 2f;
 
     [SerializeField] WaveConfig waveConfig;
 
@@ -41,7 +40,7 @@ public class ObstaclePathing : MonoBehaviour
             //makes sure that z-axis = 0
             targetPosition.z = 0f;
 
-            var obstacleMovement = obstacleMoveSpeed * Time.deltaTime;
+            var obstacleMovement = waveConfig.GetObstacleMoveSpeed() * Time.deltaTime;
 
             //move from current position, to targetPosition, at obstacleMovement speed
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, obstacleMovement);
@@ -57,5 +56,10 @@ public class ObstaclePathing : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    //set up a WaveConfig
+    public void SetWaveConfig(WaveConfig waveConfigToSet)
+    {
+        waveConfig = waveConfigToSet;
     }
 }

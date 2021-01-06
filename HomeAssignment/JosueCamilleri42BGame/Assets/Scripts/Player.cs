@@ -51,6 +51,6 @@ public class Player : MonoBehaviour
         newXPos = Mathf.Clamp(newXPos, xMin, xMax);
 
         //move the player ship on the x- and y-axis
-        transform.position = new Vector2(newXPos, -4);
+        transform.position = new Vector2(newXPos, -3.5f);
     }
 }

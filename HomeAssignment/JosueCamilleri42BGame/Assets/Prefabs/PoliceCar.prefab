@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5605928416062107198}
   - component: {fileID: 6524842622003275218}
   - component: {fileID: -5525657276553944122}
+  - component: {fileID: -8577986543191578099}
   m_Layer: 0
   m_Name: PoliceCar
   m_TagString: Untagged
@@ -95,9 +96,92 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ad6d54bf83205047870512deb59a805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 7612319327798360309, guid: 0406ef91373f1364487613e444611d2b, type: 3}
-  - {fileID: 4493924054682541227, guid: b71f7cea15727a5488c7ec9932b0c6dc, type: 3}
-  - {fileID: 5770412444426938352, guid: 4ff5aea928db15b47acdbe37af075dee, type: 3}
-  obstacleMoveSpeed: 2
-  waveConfig: {fileID: 11400000, guid: aa00561fe7f6da544b31c22617f37582, type: 2}
+  waypoints: []
+  waveConfig: {fileID: 0}
+--- !u!60 &-8577986543191578099
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2374307492075518891}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.6, y: 6.93}
+    newSize: {x: 3.6, y: 6.93}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.38, y: -2.5349998}
+      - {x: 1.42, y: -2.215}
+      - {x: 1.42, y: -1.9449999}
+      - {x: 1.43, y: -1.425}
+      - {x: 1.4399999, y: -1.105}
+      - {x: 1.4499999, y: -0.695}
+      - {x: 1.4499999, y: -0.044999998}
+      - {x: 1.5799999, y: 0.035}
+      - {x: 1.5799999, y: 0.205}
+      - {x: 1.5699999, y: 0.21499999}
+      - {x: 1.4499999, y: 0.195}
+      - {x: 1.43, y: 0.275}
+      - {x: 1.42, y: 0.615}
+      - {x: 1.41, y: 1.105}
+      - {x: 1.4499999, y: 1.3249999}
+      - {x: 1.4499999, y: 2.375}
+      - {x: 1.42, y: 2.575}
+      - {x: 1.38, y: 2.675}
+      - {x: 1.3, y: 2.835}
+      - {x: 1.16, y: 2.985}
+      - {x: 1.02, y: 3.075}
+      - {x: 0.82, y: 3.165}
+      - {x: 0.5, y: 3.225}
+      - {x: 0.32, y: 3.235}
+      - {x: -0.11, y: 3.235}
+      - {x: -0.42999998, y: 3.225}
+      - {x: -0.72999996, y: 3.165}
+      - {x: -0.91999996, y: 3.095}
+      - {x: -1.0699999, y: 3.0049999}
+      - {x: -1.18, y: 2.885}
+      - {x: -1.28, y: 2.745}
+      - {x: -1.3399999, y: 2.5249999}
+      - {x: -1.35, y: 2.425}
+      - {x: -1.36, y: 2.235}
+      - {x: -1.36, y: 2.0049999}
+      - {x: -1.35, y: 1.345}
+      - {x: -1.3199999, y: 1.165}
+      - {x: -1.31, y: 0.645}
+      - {x: -1.3199999, y: 0.635}
+      - {x: -1.3299999, y: 0.375}
+      - {x: -1.4699999, y: 0.205}
+      - {x: -1.4699999, y: 0.044999998}
+      - {x: -1.39, y: -0.015}
+      - {x: -1.3399999, y: -0.035}
+      - {x: -1.35, y: -0.505}
+      - {x: -1.3399999, y: -1.175}
+      - {x: -1.3299999, y: -1.7149999}
+      - {x: -1.3199999, y: -1.9749999}
+      - {x: -1.31, y: -2.355}
+      - {x: -1.3, y: -2.415}
+      - {x: -1.26, y: -2.635}
+      - {x: -1.18, y: -2.7749999}
+      - {x: -1.03, y: -2.945}
+      - {x: -0.81, y: -3.0649998}
+      - {x: -0.71999997, y: -3.085}
+      - {x: -0.29, y: -3.215}
+      - {x: -0.11, y: -3.235}
+      - {x: 0.17999999, y: -3.235}
+      - {x: 0.34, y: -3.225}
+      - {x: 0.94, y: -3.0549998}
+      - {x: 1.11, y: -2.955}
+      - {x: 1.31, y: -2.735}

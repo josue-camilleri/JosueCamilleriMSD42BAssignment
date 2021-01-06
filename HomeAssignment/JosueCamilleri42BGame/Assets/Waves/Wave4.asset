@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3358c211fb659284b9f8b06b940ca73d, type: 3}
   m_Name: Wave4
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 6281241411145099057, guid: 88d5c773b6d760c45a28c76c57168a5b, type: 3}
+  obstaclePrefab: {fileID: 8120908672241327581, guid: 88d5c773b6d760c45a28c76c57168a5b, type: 3}
   pathPrefab: {fileID: 2976623426579787665, guid: 355f41b1e51c0ac4d984cc953b5e538d, type: 3}
-  numberOfObstacles: 5
-  obstacleMoveSpeed: 2
+  timeBetweenSpawns: 3
+  numberOfObstacles: 1
+  obstacleMoveSpeed: 5
