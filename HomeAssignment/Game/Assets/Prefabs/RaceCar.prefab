@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotCounter: 0
   minTimeBetweenShots: 0.01
-  maxTimeBetweenShots: 0.5
+  maxTimeBetweenShots: 0.4
   obstacleLaserPrefab: {fileID: 871861526947206483, guid: 2db2c30137391f640a51e717b873a7d1, type: 3}
   obstacleLaserSpeed: 17
 --- !u!60 &9219112625921200168
