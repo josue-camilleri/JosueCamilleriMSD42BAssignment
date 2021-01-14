@@ -53,4 +53,11 @@ public class Player : MonoBehaviour
         //move the player ship on the x- and y-axis
         transform.position = new Vector2(newXPos, -3.5f);
     }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+
+        FindObjectOfType<Level>().LoadGameOver();
+    }
 }

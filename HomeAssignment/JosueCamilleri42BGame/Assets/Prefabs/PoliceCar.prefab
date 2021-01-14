@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6524842622003275218}
   - component: {fileID: -5525657276553944122}
   - component: {fileID: -8577986543191578099}
+  - component: {fileID: 9006856957554239438}
+  - component: {fileID: -8987474904155946490}
   m_Layer: 0
   m_Name: PoliceCar
   m_TagString: Untagged
@@ -108,7 +110,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -185,3 +187,42 @@ PolygonCollider2D:
       - {x: 0.94, y: -3.0549998}
       - {x: 1.11, y: -2.955}
       - {x: 1.31, y: -2.735}
+--- !u!50 &9006856957554239438
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2374307492075518891}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-8987474904155946490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2374307492075518891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4adaea48339c9d247af7a3c791394f8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wave1: 1
+  wave2: 2
+  wave3: 3
+  wave4: 4
+  wave5: 5
+  bullet: 1

@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1695373158996158651}
   - component: {fileID: 5707250075025847989}
   - component: {fileID: 7158881233975858384}
+  - component: {fileID: -1109173678575334342}
+  - component: {fileID: -2142996716535447351}
   m_Layer: 0
   m_Name: CamaroCar
   m_TagString: Untagged
@@ -126,7 +128,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -208,3 +210,42 @@ PolygonCollider2D:
       - {x: -0.16499999, y: -3.09}
       - {x: -0.035, y: -3.11}
       - {x: 0.105, y: -3.11}
+--- !u!50 &-1109173678575334342
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8120908672241327581}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-2142996716535447351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8120908672241327581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4adaea48339c9d247af7a3c791394f8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wave1: 1
+  wave2: 2
+  wave3: 3
+  wave4: 4
+  wave5: 5
+  bullet: 1
