@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -3246420384792947629}
   - component: {fileID: -8983415325061655276}
   - component: {fileID: -4586208391777238648}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,12 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4adaea48339c9d247af7a3c791394f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wave1: 1
-  wave2: 2
-  wave3: 3
-  wave4: 4
-  wave5: 5
-  bullet: 1
+  damage: 1
 --- !u!70 &-4586208391777238648
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -134,7 +129,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

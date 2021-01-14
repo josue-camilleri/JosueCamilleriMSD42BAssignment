@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8791681782053756637}
   - component: {fileID: 1938155094029185541}
   - component: {fileID: 7894464098081855032}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  waveConfig: {fileID: 0}
+  waveConfig: {fileID: 11400000, guid: 30155f95a513c50428f2040cb8802433, type: 2}
 --- !u!60 &-8791681782053756637
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -385,9 +385,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4adaea48339c9d247af7a3c791394f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wave1: 1
-  wave2: 2
-  wave3: 3
-  wave4: 4
-  wave5: 5
-  bullet: 1
+  damage: 3

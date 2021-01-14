@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9219112625921200168}
   - component: {fileID: 8493725097160574376}
   - component: {fileID: 942465666886452331}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RaceCar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  waveConfig: {fileID: 0}
+  waveConfig: {fileID: 11400000, guid: 142a2011228e09b4a9ee62fd5cc9686f, type: 2}
 --- !u!114 &3044286124520225092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,9 +236,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4adaea48339c9d247af7a3c791394f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wave1: 1
-  wave2: 2
-  wave3: 3
-  wave4: 4
-  wave5: 5
-  bullet: 1
+  damage: 5

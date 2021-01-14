@@ -51,7 +51,7 @@ public class ObstaclePathing : MonoBehaviour
                 waypointIndex++;
             }
         }
-        //if anemy reaches last waypoint
+        //if enemy reaches last waypoint
         else
         {
             Destroy(gameObject);

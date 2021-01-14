@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5416680633639247896}
   - component: {fileID: 8490209553177543221}
   - component: {fileID: -1459603993207967751}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerCar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,6 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af6bd37f0e3431843ba132a4945276a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 50
+  playerDeathSound: {fileID: 8300000, guid: 17dec4b8195561a42a42efcf0c0e913f, type: 3}
+  playerDeathSoundVolume: 0.75
 --- !u!60 &-1459603993207967751
 PolygonCollider2D:
   m_ObjectHideFlags: 0

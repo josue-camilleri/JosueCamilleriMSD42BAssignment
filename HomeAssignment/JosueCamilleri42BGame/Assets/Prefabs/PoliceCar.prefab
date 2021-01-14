@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8577986543191578099}
   - component: {fileID: 9006856957554239438}
   - component: {fileID: -8987474904155946490}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PoliceCar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  waveConfig: {fileID: 0}
+  waveConfig: {fileID: 11400000, guid: aa00561fe7f6da544b31c22617f37582, type: 2}
 --- !u!60 &-8577986543191578099
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -220,9 +220,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4adaea48339c9d247af7a3c791394f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wave1: 1
-  wave2: 2
-  wave3: 3
-  wave4: 4
-  wave5: 5
-  bullet: 1
+  damage: 1

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7158881233975858384}
   - component: {fileID: -1109173678575334342}
   - component: {fileID: -2142996716535447351}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CamaroCar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  waveConfig: {fileID: 0}
+  waveConfig: {fileID: 11400000, guid: 38c752e4199ee1a44a863daab2092026, type: 2}
 --- !u!114 &5707250075025847989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,9 +243,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4adaea48339c9d247af7a3c791394f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wave1: 1
-  wave2: 2
-  wave3: 3
-  wave4: 4
-  wave5: 5
-  bullet: 1
+  damage: 4
