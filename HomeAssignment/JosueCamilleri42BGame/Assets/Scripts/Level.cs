@@ -35,6 +35,11 @@ public class Level : MonoBehaviour
         StartCoroutine(WaitAndLoad());
     }
 
+    public void LoadWinnerScene()
+    {
+        SceneManager.LoadScene("WinnerScene");
+    }
+
     public void QuitGame()
     {
         print("Quitting Game");

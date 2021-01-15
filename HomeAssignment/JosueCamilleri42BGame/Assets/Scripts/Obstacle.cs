@@ -10,7 +10,6 @@ public class Obstacle : MonoBehaviour
     [SerializeField] GameObject deathEffects;
     [SerializeField] float explosionDuration = 1f;
 
-    [SerializeField] int scoreValue = 5;
 
     private void OnTriggerEnter2D(Collider2D otherObject)
     {
@@ -45,8 +44,7 @@ public class Obstacle : MonoBehaviour
         //destroy the particles after 1 sec
         Destroy(explosion, explosionDuration);
 
-        //add scoreValue to GameSession score
-        FindObjectOfType<GameSession>().AddToScore(scoreValue);
+
     }
 
 
