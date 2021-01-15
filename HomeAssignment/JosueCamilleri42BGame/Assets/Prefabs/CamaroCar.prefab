@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7158881233975858384}
   - component: {fileID: -1109173678575334342}
   - component: {fileID: -2142996716535447351}
+  - component: {fileID: -1042253893878696538}
   m_Layer: 10
   m_Name: CamaroCar
   m_TagString: Untagged
@@ -244,3 +245,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 4
+--- !u!114 &-1042253893878696538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8120908672241327581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f11ef4c15c91064aa313decb89c33b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  enemyDeathSound: {fileID: 0}
+  enemyDeathSoundVolume: 0.75
+  enemyShootSound: {fileID: 0}
+  enemyShootSoundVolume: 0.53
+  deathEffects: {fileID: 7268242368997581383, guid: b247232d85cda5941aeca211c68973d3, type: 3}
+  explosionDuration: 1

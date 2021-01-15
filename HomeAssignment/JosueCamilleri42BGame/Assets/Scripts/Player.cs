@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +12,7 @@ public class Player : MonoBehaviour
 
     float padding = 1.5f;
 
-    [SerializeField] float health = 50f;
+    [SerializeField] int health = 50;
 
     [SerializeField] AudioClip playerDeathSound;
     [SerializeField] [Range(0, 1)] float playerDeathSoundVolume = 0.75f;
@@ -28,36 +27,6 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
-    }
-
-    //reduce enemy health whenever enemy collides with a
-    //gameobject that has DamageDelaer component
-    private void OnTriggerEnter2D(Collider2D otherObject)
-    {
-        //access DamageDealer from otherObject that hit the player
-        //and reduce health accordingly
-        DamageDealer dmg = otherObject.gameObject.GetComponent<DamageDealer>();
-
-        if (!dmg)
-        {
-            return;
-        }
-
-        ProcessHit(dmg);
-
-    }
-
-    private void ProcessHit(DamageDealer dmg)
-    {
-        health -= dmg.GetDamage();
-
-        //destroy player laser
-        dmg.Hit();
-
-        if (health <= 0)
-        {
-            Die();
-        }
     }
 
     //setting up the boundaries according to the camera
@@ -87,6 +56,39 @@ public class Player : MonoBehaviour
 
         //move the player ship on the x- and y-axis
         transform.position = new Vector2(newXPos, -3.5f);
+    }
+
+    //reduce player health whenever obstacle collides with a
+    //gameobject that has DamageDelaer component
+    private void OnTriggerEnter2D(Collider2D otherObject)
+    {
+        //access DamageDealer from otherObject that hit the player
+        //and reduce health accordingly
+        DamageDealer dmg = otherObject.gameObject.GetComponent<DamageDealer>();
+
+        if (!dmg)
+        {
+            return;
+        }
+
+        ProcessHit(dmg);
+
+        AudioSource.PlayClipAtPoint(playerDeathSound, Camera.main.transform.position, playerDeathSoundVolume);
+
+
+    }
+
+    private void ProcessHit(DamageDealer dmg)
+    {
+        health -= dmg.GetDamage();
+
+        //destroy player laser
+        dmg.Hit();
+
+        if (health <= 0)
+        {
+            Die();
+        }
     }
 
     private void Die()

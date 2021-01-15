@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9219112625921200168}
   - component: {fileID: 8493725097160574376}
   - component: {fileID: 942465666886452331}
+  - component: {fileID: 5629494585336702189}
   m_Layer: 10
   m_Name: RaceCar
   m_TagString: Untagged
@@ -237,3 +238,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
+--- !u!114 &5629494585336702189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818138676543637234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f11ef4c15c91064aa313decb89c33b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  enemyDeathSound: {fileID: 0}
+  enemyDeathSoundVolume: 0.75
+  enemyShootSound: {fileID: 0}
+  enemyShootSoundVolume: 0.53
+  deathEffects: {fileID: 7268242368997581383, guid: b247232d85cda5941aeca211c68973d3, type: 3}
+  explosionDuration: 1
