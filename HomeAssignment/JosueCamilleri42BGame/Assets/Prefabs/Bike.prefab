@@ -400,9 +400,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  enemyDeathSound: {fileID: 0}
-  enemyDeathSoundVolume: 0.75
-  enemyShootSound: {fileID: 0}
-  enemyShootSoundVolume: 0.53
   deathEffects: {fileID: 7268242368997581383, guid: b247232d85cda5941aeca211c68973d3, type: 3}
   explosionDuration: 1
+  scoreValue: 5

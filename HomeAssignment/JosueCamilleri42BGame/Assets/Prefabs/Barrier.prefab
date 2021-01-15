@@ -454,3 +454,4 @@ MonoBehaviour:
   health: 100
   deathEffects: {fileID: 7268242368997581383, guid: b247232d85cda5941aeca211c68973d3, type: 3}
   explosionDuration: 1
+  scoreValue: 5

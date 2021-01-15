@@ -98,5 +98,6 @@ public class Player : MonoBehaviour
         AudioSource.PlayClipAtPoint(playerDeathSound, Camera.main.transform.position, playerDeathSoundVolume);
 
         FindObjectOfType<Level>().LoadGameOver();
+
     }
 }
