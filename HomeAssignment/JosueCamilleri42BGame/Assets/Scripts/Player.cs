@@ -90,16 +90,17 @@ public class Player : MonoBehaviour
     {
         health -= dmg.GetDamage();
 
-        //destroy player laser
-        dmg.Hit();
 
         if (health <= 0 && scoreValue < 100)
         {
+            health = 0;
             Die();
+            FindObjectOfType<Level>().LoadGameOver();
         }
-
-        else if(scoreValue >= 100)
+        else if(health <= 0 && scoreValue >= 100)
         {
+            health = 0;
+            Die();
             FindObjectOfType<Level>().LoadWinnerScene();
         }
     }
@@ -110,10 +111,9 @@ public class Player : MonoBehaviour
 
         AudioSource.PlayClipAtPoint(playerDeathSound, Camera.main.transform.position, playerDeathSoundVolume);
 
-        FindObjectOfType<Level>().LoadGameOver();
-
         //add scoreValue to GameSession score
         FindObjectOfType<GameSession>().AddToScore(scoreValue);
 
     }
+
 }
