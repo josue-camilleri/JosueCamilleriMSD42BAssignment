@@ -70,3 +70,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2bbf3889549c64685e456bfd2f877b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPointSound: {fileID: 8300000, guid: 5756eb9aab3584a4183646ad95284000, type: 3}
+  playerPointSoundVolume: 0.75

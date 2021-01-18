@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     [SerializeField] AudioClip playerDeathSound;
     [SerializeField] [Range(0, 1)] float playerDeathSoundVolume = 0.75f;
 
-    [SerializeField] int scoreValue = 5;
+    int valueScore = 0;
 
 
     // Start is called before the first frame update
@@ -89,16 +89,19 @@ public class Player : MonoBehaviour
     private void ProcessHit(DamageDealer dmg)
     {
         health -= dmg.GetDamage();
+        //add scoreValue to GameSession score
+        valueScore = FindObjectOfType<GameSession>().GetScore();
 
 
-        if (health <= 0 && scoreValue < 100)
+        if (health <= 0 && valueScore < 100)
         {
+            health = 0;
             Die();
             FindObjectOfType<Level>().LoadGameOver();
-
         }
-        else if(health <= 0 && scoreValue >= 100)
+        else if(health <= 0 && valueScore >= 100)
         {
+            health = 0;
             Die();
             FindObjectOfType<Level>().LoadWinnerScene();
         }
@@ -110,10 +113,6 @@ public class Player : MonoBehaviour
         Destroy(gameObject);
 
         AudioSource.PlayClipAtPoint(playerDeathSound, Camera.main.transform.position, playerDeathSoundVolume);
-
-        //add scoreValue to GameSession score
-        FindObjectOfType<GameSession>().AddToScore(scoreValue);
-
     }
 
 }

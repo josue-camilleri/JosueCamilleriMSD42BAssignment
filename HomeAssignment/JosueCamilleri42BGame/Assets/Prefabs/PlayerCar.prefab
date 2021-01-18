@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   playerDeathSound: {fileID: 8300000, guid: 17dec4b8195561a42a42efcf0c0e913f, type: 3}
-  playerDeathSoundVolume: 0.75
+  playerDeathSoundVolume: 1
   scoreValue: 5
 --- !u!60 &-1459603993207967751
 PolygonCollider2D:

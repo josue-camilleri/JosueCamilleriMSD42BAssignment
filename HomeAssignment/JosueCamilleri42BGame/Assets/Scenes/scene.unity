@@ -484,6 +484,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66e6a79695b9f6a42a823daab5f5328c, type: 3}
+--- !u!1 &1390629509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5952536301302868271, guid: c7739692773ae5f40aaf722318184a0c, type: 3}
+  m_PrefabInstance: {fileID: 5952536300304397358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1390629510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390629509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a5b7d0bcbda7f4ab8ed1fef772fc62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1416938722
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,13 +914,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shredder (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3025539052466077426, guid: 0a7b550c9dda0c74ca2ac8358ab0fcb7, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 3025539052466077439, guid: 0a7b550c9dda0c74ca2ac8358ab0fcb7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 3025539052466077439, guid: 0a7b550c9dda0c74ca2ac8358ab0fcb7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.28
+      value: -4.22
       objectReference: {fileID: 0}
     - target: {fileID: 3025539052466077439, guid: 0a7b550c9dda0c74ca2ac8358ab0fcb7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -999,11 +1020,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5952536301302868268, guid: c7739692773ae5f40aaf722318184a0c, type: 3}
+      propertyPath: playerPointSoundVolume
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5952536301302868271, guid: c7739692773ae5f40aaf722318184a0c, type: 3}
       propertyPath: m_Name
       value: Shredder
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5952536301302868268, guid: c7739692773ae5f40aaf722318184a0c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c7739692773ae5f40aaf722318184a0c, type: 3}
 --- !u!4 &5952536300304397359 stripped
 Transform:
