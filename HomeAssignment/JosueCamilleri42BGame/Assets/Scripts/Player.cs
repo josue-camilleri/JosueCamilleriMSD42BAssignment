@@ -93,16 +93,16 @@ public class Player : MonoBehaviour
 
         if (health <= 0 && scoreValue < 100)
         {
-            health = 0;
             Die();
             FindObjectOfType<Level>().LoadGameOver();
+
         }
         else if(health <= 0 && scoreValue >= 100)
         {
-            health = 0;
             Die();
             FindObjectOfType<Level>().LoadWinnerScene();
         }
+        
     }
 
     private void Die()
