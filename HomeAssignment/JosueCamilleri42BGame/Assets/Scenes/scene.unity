@@ -801,6 +801,10 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2222465558395617874, guid: 2143b12cef5912d4e9f5b901cf0ae69d, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4263956449043504519, guid: 2143b12cef5912d4e9f5b901cf0ae69d, type: 3}
       propertyPath: m_Color.r
       value: 0.019819975
